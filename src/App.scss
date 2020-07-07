@@ -1,0 +1,57 @@
+$boxMainSize: 200px;
+$mainFontSize: 14px;
+$mainBgColor: white;
+
+body {
+  background-color: $mainBgColor;
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 0;
+      background-color:  rgb(220, 220, 230);
+      nav {
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          display: flex;
+          li {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    h3 {
+      font-size: 20px;
+      color: black;
+      margin-top: 30px;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      width: 800px;
+      margin: 0 auto;
+      .items {
+        border: 1px solid gray;
+        width: $boxMainSize;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+        h4 {
+          font-size: $mainFontSize;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
